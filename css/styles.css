@@ -1,10 +1,36 @@
-html{
-    font-family: "Roboto", sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  width: 900px;
+  height: 415px;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  margin: 38px 35px 0;
+}
 
+.main-video .video-title,
+.sider .video-thumbnail-title {
+  font-weight: 700;
+}
+
+.main-video {
+  margin: 38px 0 0 35px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, max(543px));
+}
+
+.main-video .video-title {
+  font-size: 18px;
+}
+.sider {
+  margin-left: 17px;
+}
+
+.sider .video-thumbnail,
+.sider .ads {
+  margin: 38px 35px 55px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
 }
